@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            font-size: 20px;
+        }
+
+        .px-example {
+            width: 200px;
+            height: 150px;
+            font-size: 16px;
+            background-color: lightblue;
+        }
+
+        .percentage-container {
+            width: 100px;
+            height: 1000px;
+        }
+
+        .percentage-example {
+            width: 80%;
+            height: 15%;
+            padding: 10%;
+            font-size: 120%;
+            background-color: lightgreen;
+        }
+
+        /* with respect to screen body size */
+        .viewport-example {
+            /* vw - view width | vh - view height*/
+            margin-top: 1rem;
+            width: 25vw;
+            height: 25vh;
+            background-color: lightcoral;
+        }
+
+        /* rem=16px */
+        .rem-example {
+            margin: 2rem;
+            width: 15rem;
+            height: 8rem;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="px-example">Pixel Example</div>
+    <div class="percentage-container">
+        <div class="percentage-example">percentage Example</div>
+    </div>
+
+    <div class="viewport-example">viewport Example</div>
+    <div class="rem-example">Rem Example</div>
+</body>
+
+</html>

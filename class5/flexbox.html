@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container {
+            background-color: tomato;
+            border: 2px solid block;
+            height: 1500px;
+            width: auto;
+            display: flex;
+            /*Must to have to use any other feature*/
+            /*flex-direction: it defines how children items are aligned either row or column or row-reverse or column-reverse */
+            /*flex-direction: it is directly proportional to main axis*/
+            /* flex-direction: row; */
+
+            /*this property is applied to main axis*/
+            justify-content: space-around;
+
+            /* this property applies to cross axis*/
+            /* stretch if multiple lines then it stretches*/
+            align-items: flex-end;
+            /*this works as per width available on screen*/
+            /* flex-wrap: wrap; */
+            /* display: inline; */
+
+            /*combination of flex direction and flex wrap*/
+            flex-flow: row nowrap;
+
+            /*applies to all items provides in container*/
+            /* gap: 25px; */
+
+            row-gap: 10px;
+            column-gap: 25px;
+
+            /*this property applies in cross axis*/
+            /*comes into play when you have multi lines of items*/
+            /*this item allows us to put the entire group of item childs to one place*/
+            align-content: flex-end;
+        }
+
+        .item {
+            /* display: inline; */
+            height: 100px;
+            width: 100px;
+            background-color: dodgerblue;
+            margin: 10px;
+        }
+
+        /*default order value*/
+        /* .item1{
+            order: 1;
+        } */
+
+        .item1 {
+            /*order is helpful in order to rearrange the order in which elements are rendered*/
+            /* order: 5; */
+            /*speed to increase the width = double pace*/
+            /*flex grow is used when we want items to grow with ratio when width of screen increases*/
+            /* flex-grow: 2; */
+
+            /*flex shrink is used when we want items to decrease with ratio when width of screen decreases*/
+            /*speed to decrease the width = half, might not be visible when wrap is used with flex*/
+            /* flex-shrink: 2; */
+
+            /*Works same way as align items it overrides the align-item but at element level*/
+            align-self: flex-start;
+
+            /*Min width of item to maintain*/
+            /* flex-basis: 50px; */
+
+            /*flex-grow flex-shrink flex-basis*/
+            flex: 0 0 50px;
+        }
+
+        .item2 {
+            order: 3;
+            /* align-self: center; */
+        }
+
+        .item3 {
+            order: 8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <span class="item item4">4</span>
+        <span class="item item5">5</span>
+        <span class="item item6">6</span>
+    </div>
+    <span class="test">7</span>
+    <span class="test">8</span>
+    <span class="test">9</span>
+    <span class="test">10</span>
+</body>
+
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .card {
+            border: 1px solid black;
+            margin: 20px;
+            box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, .3);
+            width: 300px;
+            height: 500px;
+            /* flex-basis: 300px; */
+            overflow: auto;
+            border-radius: 8px;
+            /* display: flex; */
+        }
+
+        .card img {
+            max-width: 100%;
+            max-height: 60%;
+            max-height: 80%;
+        }
+
+        .card button {
+            text-align: center;
+            align-self: center;
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 20px 0px 10px;
+        }
+
+        @media only screen and (max-width: 400px) {
+            .card {
+                max-width: 100%;
+                min-height: 100%;
+                /* max-height: 70%; */
+            }
+        }
+
+        /* @media only screen and (max-width: 400px) {
+            
+        } */
+    </style>
+</head>
+
+<body>
+    <main class="cards">
+        <article class="card">
+            <img src="https://images.unsplash.com/photo-1729556227126-452c221f1ef4?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="cars">
+            <div class="text">
+                <h3>Cars Model</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt enim impedit inventore. Dignissimos
+                    deserunt placeat quod hic eaque ipsam eos odio officiis dicta eum dolore, expedita, quae quaerat,
+                    beatae quo.Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt enim impedit inventore.
+                    Dignissimos
+                </p>
+                <button>
+                    Click to Select
+                </button>
+            </div>
+        </article>
+        <article class="card">
+            <img src="https://images.unsplash.com/photo-1729556227126-452c221f1ef4?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="">
+            <div class="text">
+                <h3>Cars Model</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt enim impedit inventore. Dignissimos
+                    deserunt placeat quod hic eaque ipsam eos odio officiis dicta eum dolore, expedita, quae quaerat,
+                    beatae quo.Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt enim impedit inventore.
+                    Dignissimos
+                </p>
+                <button>
+                    Click to Select
+                </button>
+            </div>
+        </article>
+        <article class="card">
+            <img src="https://images.unsplash.com/photo-1729556227126-452c221f1ef4?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="">
+            <div class="text">
+                <h3>Cars Model</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt enim impedit inventore. Dignissimos
+                    deserunt placeat quod hic eaque ipsam eos odio officiis dicta eum dolore, expedita, quae quaerat,
+                    beatae quo.Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt enim impedit inventore.
+                    Dignissimos
+                </p>
+                <button>
+                    Click to Select
+                </button>
+            </div>
+        </article>
+        <article class="card">
+            <img src="https://images.unsplash.com/photo-1729556227126-452c221f1ef4?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="">
+            <div class="text">
+                <h3>Cars Model</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt enim impedit inventore. Dignissimos
+                    deserunt placeat quod hic eaque ipsam eos odio officiis dicta eum dolore, expedita, quae quaerat,
+                    beatae quo.Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt enim impedit inventore.
+                    Dignissimos
+                </p>
+                <button>
+                    Click to Select
+                </button>
+            </div>
+        </article>
+        <article class="card">
+            <img src="https://images.unsplash.com/photo-1729556227126-452c221f1ef4?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="">
+            <div class="text">
+                <h3>Cars Model</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt enim impedit inventore. Dignissimos
+                    deserunt placeat quod hic eaque ipsam eos odio officiis dicta eum dolore, expedita, quae quaerat,
+                    beatae quo.Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt enim impedit inventore.
+                    Dignissimos
+                </p>
+                <button>
+                    Click to Select
+                </button>
+            </div>
+        </article>
+        <article class="card">
+            <img src="https://images.unsplash.com/photo-1729556227126-452c221f1ef4?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="">
+            <div class="text">
+                <h3>Cars Model</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt enim impedit inventore. Dignissimos
+                    deserunt placeat quod hic eaque ipsam eos odio officiis dicta eum dolore, expedita, quae quaerat,
+                    beatae quo.Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt enim impedit inventore.
+                    Dignissimos
+                </p>
+                <button>
+                    Click to Select
+                </button>
+            </div>
+        </article>
+        <article class="card">
+            <img src="https://images.unsplash.com/photo-1729556227126-452c221f1ef4?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="">
+            <div class="text">
+                <h3>Cars Model</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt enim impedit inventore. Dignissimos
+                    deserunt placeat quod hic eaque ipsam eos odio officiis dicta eum dolore, expedita, quae quaerat,
+                    beatae quo.Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt enim impedit inventore.
+                    Dignissimos
+                </p>
+                <button>
+                    Click to Select
+                </button>
+            </div>
+        </article>
+        <article class="card">
+            <img src="https://images.unsplash.com/photo-1729556227126-452c221f1ef4?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="">
+            <div class="text">
+                <h3>Cars Model</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt enim impedit inventore. Dignissimos
+                    deserunt placeat quod hic eaque ipsam eos odio officiis dicta eum dolore, expedita, quae quaerat,
+                    beatae quo.Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt enim impedit inventore.
+                    Dignissimos
+                </p>
+                <button>
+                    Click to Select
+                </button>
+            </div>
+        </article>
+        <article class="card">
+            <img src="https://images.unsplash.com/photo-1729556227126-452c221f1ef4?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="">
+            <div class="text">
+                <h3>Cars Model</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt enim impedit inventore. Dignissimos
+                    deserunt placeat quod hic eaque ipsam eos odio officiis dicta eum dolore, expedita, quae quaerat,
+                    beatae quo.Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt enim impedit inventore.
+                    Dignissimos
+                </p>
+                <button>
+                    Click to Select
+                </button>
+            </div>
+        </article>
+
+    </main>
+</body>
+
+</html>
