@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practise Box Props</title>
+    <style>
+        html {
+            box-sizing: border-box;
+        }
+
+        .par1,
+        .par2 {
+            width: 200px;
+            height: 50vh;
+            background-color: red;
+            border: 3px solid green;
+        }
+
+        .child1,
+        .child2 {
+            /* width: 50px; */
+            height: 25vh;
+            background-color: yellow;
+            border: 5px solid blue;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+        }
+
+        a {
+            display: inline-block;
+            margin: 0.5rem;
+            background-color: yellow;
+            border: 2px solid yellow;
+            text-decoration: none;
+        }
+
+        a:hover {
+            background-color: red;
+            border: 2px solid yellow;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Plans</a></li>
+                <li><a href="#">Blogs</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="par1">
+            <div class="child1"></div>
+            <div class="child2"></div>
+        </div>
+        <div class="par2">
+
+        </div>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus ea id a possimus natus? Ratione odit
+            officiis <span>IMPORTANT key</span>dicta recusandae odio cum fugiat nemo inventore. Commodi hic a cum
+            assumenda ab.</p>
+    </section>
+</body>
+
+</html>

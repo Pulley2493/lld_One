@@ -9,20 +9,28 @@
         .content-box {
             width: 200px;
             height: 200px;
-            margin: 15px;
+            /* margin: 15px; */
             padding: 20px;
             border: 5px solid gray;
             background-color: tomato;
+            margin-bottom: 10px;
         }
 
         .border-box {
             width: 200px;
             height: 200px;
-            margin: 15px;
+            /* margin: 15px; */
             padding: 20px;
             border: 5px solid gray;
             background-color: thistle;
             box-sizing: border-box;
+        }
+
+        p {
+            border: 0.5px dashed black;
+            background-color: grey;
+            margin: 0;
+            /* padding: 10px; */
         }
     </style>
 </head>
@@ -30,6 +38,8 @@
 <body>
     <div class="content-box"></div>
     <div class="border-box"></div>
+    <span>The one</span>
+    <span>The two</span>
 </body>
 
 </html>

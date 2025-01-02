@@ -19,7 +19,7 @@
         }
 
         .container {
-            width: 600px;
+            width: 100%;
             height: 500px;
             border: 2px solid black;
             padding: 10px;
@@ -39,14 +39,14 @@
 
             /*minmax(low, high)*/
             /*80px, 1fr = 80-200px*/
-            /* grid-template-columns: repeat(3, minmax(80px, 1fr)); */
+            /* grid-template-columns: repeat(4, minmax(80px, 1fr)); */
 
             /* no of columns : auto-fill | auto-fit*/
-            /* grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)); */
+            grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
 
             /* grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); */
 
-            grid-template-columns: 100px 100px 100px;
+            /* grid-template-columns: 100px 100px 100px; */
             grid-template-rows: 100px 100px 100px 100px 100px;
             /* grid-template-rows: 100px 100px 100px; */
 
@@ -57,6 +57,7 @@
             /*align-tems: along the column you can adjust it
             using start, end , center*/
             /* align-items: center; */
+            text-align: center;
 
             /*combination of both above property. shared value*/
             /* place-items: center; */
@@ -64,7 +65,7 @@
             /*Moves the container itself*/
             /* justify-content: center;
             align-content: center; */
-            /* place-content: center; */
+            place-content: center;
 
             /*how items should be arrange row wise or column wise
             Any additional items it need to have will create in direction first manner*/
@@ -74,8 +75,8 @@
             /* grid-auto-columns: 10px; */
 
             /*what should be gap between rows and cols*/
-            /* row-gap: 5px;
-            column-gap: 5px; */
+            row-gap: 5px;
+            column-gap: 5px;
             /* gap: 5px 2px; */
 
         }
@@ -97,9 +98,9 @@
             /* grid-column: 1 / 4;
             grid-row: 1 / 3; */
 
-            /* start line/ no of cols/ row span*/
+            /* start line/ no of cols -- if span keyword used/ row span*/
             grid-column: 1 / 3 span;
-            grid-row: 1 / 2 span;
+            grid-row: 2 / 1 span;
 
             /* grid-row: 4 span; */
 
@@ -112,8 +113,8 @@
 
 
         .item:nth-of-type(6) {
-            grid-row: 2/2 span;
-            grid-column: 2/2 span;
+            grid-row: 3/2 span;
+            grid-column: 4/2 span;
         }
 
         .item:nth-of-type(9) {
@@ -132,8 +133,7 @@
         <div class="item">3</div>
         <div class="item">4</div>
         <div class="item">5</div>
-        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla perspiciatis voluptates
-            nesciunt esse iusto, pariatur harum! Eum maxime facere officia?</div>
+        <div class="item"></div>
         <div class="item">7</div>
         <div class="item">8</div>
         <div class="item">9</div>

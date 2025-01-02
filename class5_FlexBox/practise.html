@@ -6,21 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .m1.m2 {
-            color: blueviolet;
+        .animation {
+            animation: vibrate 0.3s linear infinite both;
         }
 
-        /* OR */
-        /* .m2.m1 {
-            color: red;
+        /* @media (prefers-reduced-motion: reduce) {
+            .animation {
+                animation: none;
+            }
         } */
     </style>
 </head>
 
 <body>
-    <div class="m1 m2">Select me</div>
-    <div class="m1">Not me</div>
-    <div class="m2">Not me either</div>
+    <div class="animation">animated box</div>
+
 </body>
 
 </html>
