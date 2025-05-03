@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic</title>
+    <style>
+        body {
+            background-color: tomato;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 5fr 1fr 1fr;
+            grid-template-rows: 1fr 8fr 1fr;
+
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .item {
+            border: 1px solid white;
+            padding: 10px;
+        }
+
+        .item:nth-of-type(1) {
+            grid-column: span 4;
+        }
+
+        .item:nth-of-type(2) {
+            grid-row: 2/4;
+        }
+
+        .item:nth-of-type(6) {
+            grid-column: span 3;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">Header</div>
+        <div class="item">Navgation</div>
+        <div class="item">Content</div>
+        <div class="item">Sidebar</div>
+        <div class="item">Sidebar</div>
+        <div class="item">Footer</div>
+    </div>
+</body>
+
+</html>

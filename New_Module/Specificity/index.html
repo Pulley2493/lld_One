@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* (0,0,1) */
+        li {
+            color: red !important;
+        }
+
+        /* (1,0,0) */
+        #fruits {
+            color: palevioletred;
+        }
+
+        /* 0,1,0 */
+        .favourite {
+            color: green;
+        }
+
+        /* 1,0,1 */
+        li#fruits {
+            color: yellow;
+        }
+
+
+        /* 1,0,1 */
+        ul #fruits {
+            color: red;
+        }
+
+
+        /* 0,1,1 */
+        ul .favourite {
+            color: gold;
+        }
+
+        /* 0,1,1 */
+        li.favourite {
+            color: aqua;
+        }
+
+        /* 0,0,3 */
+        body ul li {
+            color: pink;
+        }
+
+        /* 0,0,0 */
+        * {
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div id="main" class="important">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad aliquid ipsum iste praesentium architecto non
+            est voluptatum impedit, at eligendi eius, nam beatae. Blanditiis vitae ipsum quas maxime architecto porro.
+            Qui, laudantium, ad dolorem rem, maxime unde inventore sunt dicta hic nam eius molestiae! Temporibus non,
+            totam veritatis, unde dolor eius accusamus officia quisquam iste hic cumque quibusdam, sequi architecto!</p>
+    </div> -->
+    <ul>
+        <li>Apple</li>
+        <li id="fruits" class="favourite" style="color: blueviolet;">Mango</li>
+        <li>Orange</li>
+    </ul>
+</body>
+
+</html>

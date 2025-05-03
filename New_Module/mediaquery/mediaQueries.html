@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query example</title>
+
+    <style>
+        /* @media screen {} */
+
+        body {
+            font-size: 18px;
+            background-color: lightblue;
+        }
+
+        /*Styles fro 600px or less*/
+        /* @media(max-width: 600px) {
+            body {
+                font-size: 14px;
+                background-color: lightgreen;
+            }
+        }
+
+        @media(min-width: 768px) {
+            body {
+                font-size: 22px;
+                background-color: lightcoral;
+            }
+        } */
+
+        /*portrait height>width*/
+        /* @media(orientation: portrait) {
+            body {
+                background-color: lightcoral;
+            }
+        } */
+
+        /*landscape width>height*/
+        /* @media(orientation: landscape) {
+            body {
+                background-color: lightyellow;
+            }
+        } */
+
+        /*low resolution devices*/
+        @media(max-resolution:600dpi) {
+            body {
+                background-color: lightgray;
+            }
+        }
+
+        /*high resolution devices*/
+        @media(min-resolution:3000dpi) {
+            body {
+                background-color: lightblue;
+            }
+        }
+
+        @media print {
+            body {
+                background-color: white;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>I am a responsive layout</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat ut provident nostrum recusandae tempore
+            tempora cumque fugit cum temporibus consequuntur, ex unde soluta. Eligendi voluptate in vero nostrum natus
+            eius?
+            Quo modi velit saepe nisi, ullam, soluta corporis a obcaecati quos voluptatibus esse reiciendis earum quod
+            doloribus iure, culpa nulla ducimus deleniti! Quidem deserunt similique necessitatibus tenetur pariatur.
+            Quasi, enim?
+            Nam in maiores, nisi vitae blanditiis dolorum sed velit optio ea eos quis nihil, distinctio excepturi.
+            Libero unde perferendis, cumque eveniet, dignissimos corrupti aspernatur nemo, saepe cupiditate aperiam id
+            molestiae.
+            Repellendus est molestias veritatis libero deleniti maiores praesentium, consectetur temporibus consequuntur
+            quibusdam nulla hic expedita doloribus? Reprehenderit illum rerum recusandae, quam architecto quod quo
+            obcaecati repellendus beatae nulla repellat rem.
+            Unde eligendi voluptatem ab ducimus nobis doloremque error excepturi voluptas optio, labore voluptate culpa
+            laborum eos non, iusto nemo tempora quos, sed atque praesentium? Illo minima nihil natus voluptatibus
+            repellendus?</p>
+    </div>
+</body>
+
+</html>

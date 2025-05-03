@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            border: 5px solid black;
+        }
+
+        .parent {
+            /*Inherited*/
+            color: red;
+
+            /*Inherited*/
+            font-size: 20px;
+
+            /*Not Inherited*/
+            border: inherit;
+            /* border: 1px solid green; */
+
+            /*Not Inherited*/
+            padding: 10px;
+
+        }
+
+        .child {
+            border: inherit;
+            /* border: 1px solid red; */
+            padding: inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        Parent Text
+        <div class="child">
+            Child Text
+        </div>
+    </div>
+</body>
+
+</html>
